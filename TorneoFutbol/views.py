@@ -9,6 +9,8 @@ lista_equipos=["Barcelona","Real Madrid","Boca","Villareal","Valencia","Milan","
 
 def ventana(request):
     lista_equipos=["Barcelona","Real Madrid","Boca","Villareal","Valencia","Milan","Sevilla","Manchester City"]
+
+
     return render(request,"myPlantilla.html",{"equipos":lista_equipos})
 
 def Equipos (request):
