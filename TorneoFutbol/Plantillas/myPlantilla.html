@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Torneo</title>
+    <h1><p style="text-align:center">Ventana Torneo</p></h1>
+</head>
+<body>
+    <div id="Fondo">
+    <nav>
+        <div id="BarraMenu">
+    {%include "barra.html"%}    
+        </div>
+    </nav>
+        <section>
+            <h2>Equipos Participantes</h2>
+            <ul id="Participantes">
+                {% for x in equipos  %} 
+                <li>{{x}}</li>
+                {% endfor %}
+            </ul>
+            <div id="Cuartos">
+                <h2>
+                Cuatos de Final:
+                </h2>
+                    <h3>Barcelona 3 - 0 Milan</h3>
+                    <h3>Real Radrid 2 - 1 Valencia</h3>
+                    <h3>Manchester City 5 - 0 Sevilla</h3>
+                    <h3>Boca 1 - 0 Villareal</h3>
+            </div>
+            <div id="Semis">
+                <h2>
+                SemiFinal:
+                </h2>
+                <h3><p>Boca  1- 0 Real Madrid</p></h3>
+                <h3>Barcelona 2- 0 Manchester City</h3>
+            </div>
+            <div id="Final" ">
+                <h2>
+                    Final:
+                </h2>
+                    <h3>Boca 1 - 0 Barcelona</h3>
+            </div> 
+        </section>
+    <footer ><div id="Derechos"> @kevin Oyarse</div></footer>
+    </div>
+</body>
+</html>
+    
+    
