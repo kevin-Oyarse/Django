@@ -10,8 +10,9 @@ lista_equipos=["Barcelona","Real Madrid","Boca","Villareal","Valencia","Milan","
 def ventana(request):
     lista_equipos=["Barcelona","Real Madrid","Boca","Villareal","Valencia","Milan","Sevilla","Manchester City"]
 
+    rand=random.randint(0,6)
 
-    return render(request,"myPlantilla.html",{"equipos":lista_equipos})
+    return render(request,"myPlantilla.html",{"equipos":lista_equipos},{"rand":rand})
 
 def Equipos (request):
     return render(request,"equipo.html")
